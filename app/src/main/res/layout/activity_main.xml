@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/main_title"
+        android:longClickable="false"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:contentDescription="Signal From Mars"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START YOUR ADVENTURE"
+        android:id="@+id/startButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/titleImageView"
+        android:layout_alignStart="@+id/titleImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:maxLength="30" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nameEditText"
+        android:layout_above="@+id/startButton"
+        android:layout_alignLeft="@+id/startButton"
+        android:layout_alignStart="@+id/startButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:maxLength="30"
+        android:hint="Enter your name to begin" />
+</RelativeLayout>
