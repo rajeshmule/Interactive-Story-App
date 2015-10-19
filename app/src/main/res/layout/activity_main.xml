@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context=".MainActivity">
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:background="@android:color/white">
 
     <ImageView
         android:layout_width="match_parent"
@@ -25,7 +26,8 @@
         android:layout_alignStart="@+id/titleImageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:maxLength="30" />
+        android:maxLength="30"
+        android:background="@android:color/white" />
 
     <EditText
         android:layout_width="match_parent"
